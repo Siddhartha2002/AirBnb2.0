@@ -6,10 +6,10 @@ import InfoCard from "../components/InfoCard";
 import Map from "../components/Map";
 
 function search({ searchResults }) {
-  const router = useRouter();
+  const Router = useRouter();
 
   // using ES6 destructuring
-  const { location, startDate, endDate, noOfGuests } = router.query;
+  const { location, startDate, endDate, noOfGuests } = Router.query;
 
   const formattedStartDate = format(new Date(startDate), "dd MMMM yyyy");
   const formattedEndDate = format(new Date(endDate), "dd MMMM yyyy");
